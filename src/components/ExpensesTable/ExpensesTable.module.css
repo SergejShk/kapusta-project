@@ -1,0 +1,71 @@
+.table {
+  box-sizing: border-box;
+  width: 746px;
+  margin: 100px;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+.categori {
+  width: 746px;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  background-color: #f5f6fb;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.inform-list {
+  box-sizing: border-box;
+
+  max-height: 344px;
+  width: 746px;
+
+  border-top: 2px solid #f5f6fb;
+  border-bottom: 2px solid #f5f6fb;
+  border-left: 2px solid #f5f6fb;
+  overflow-y: auto;
+}
+.inform {
+  height: 40px;
+  display: flex;
+  padding: 0 27px 0 20px;
+  justify-content: space-around;
+}
+.inform:not(:last-child) {
+  border-bottom: 2px solid #f5f6fb;
+}
+.btn {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+  border-radius: 50%;
+  background: #f5f6fb;
+}
+
+/* Стили для скролла */
+::-webkit-scrollbar {
+  width: 6.2px;
+  height: 30px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f6fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff751d;
+  border-radius: 2px;
+}
