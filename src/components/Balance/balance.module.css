@@ -1,0 +1,249 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperBalance {
+  margin: 0 auto;
+  position: relative;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding-bottom: 8px;
+  margin-right: -2px;
+
+  color: rgba(82, 85, 95, 0.7);
+}
+
+.input {
+  position: relative;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: transparent;
+  width: 140px;
+  margin-right: -2px;
+
+  padding: 12px 20px;
+
+  border: 2px solid #ffffff;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+
+  color: #000000;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background-color: transparent;
+  width: 140px;
+
+  padding: 12px 30px;
+
+  border: 2px solid #ffffff;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  color: rgba(82, 85, 95, 0.7);
+  cursor: pointer;
+}
+
+.tooltipContainment {
+  position: absolute;
+
+  margin-top: 20px;
+
+  top: 100%;
+  width: 230px;
+  padding: 40px 25px;
+  color: #fff;
+  text-align: center;
+
+  background: linear-gradient(117.84deg, #1d346a 2.84%, #031634 67.28%);
+  border-radius: 30px;
+  display: block;
+
+  z-index: 999;
+}
+
+.tooltipArrow {
+  content: '';
+  position: absolute;
+
+  top: 100%;
+  left: 20%;
+
+  margin-top: 3px;
+
+  transform: translateY(-50%);
+
+  background-color: linear-gradient(117.84deg, #1d346a 2.84%, #031634 67.28%);
+  /* the arrow */
+  border: 18px solid #1d348a;
+  border-color: transparent transparent #1d346a transparent;
+
+  z-index: 999;
+  display: block;
+}
+
+.tooltipHide {
+  display: none;
+}
+
+.inputWrapper {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.tooltipMainText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.tooltipText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapperBalance {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+
+  .wrapperBalance {
+    display: flex;
+    align-items: baseline;
+    margin-right: 102px;
+  }
+
+  .text {
+    padding-right: 20px;
+  }
+
+  .input {
+    margin-right: 15px;
+    border-radius: 16px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .button {
+    border-radius: 16px;
+  }
+
+  .tooltipContainment {
+    width: 238px;
+    margin-left: 15px;
+    padding: 40px 25px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapperBalance {
+    margin-right: 190px;
+  }
+}
+
+.BalanceBox {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+.BoxSwitcher {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .BalanceBox {
+    display: flex;
+    width: 680px;
+    justify-content: center;
+    flex-direction: initial;
+  }
+  .BoxSwitcher {
+    display: flex;
+    flex-direction: row;
+  }
+  .BoxTabSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 704px;
+  }
+
+}
+@media screen and (min-width: 980px) {
+  .BalanceBox {
+    display: flex;
+    width: 980px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .BalanceBox {
+    display: flex;
+    width: 1098px;
+    justify-content: flex-end;
+  }
+  .BoxTabSwitch {
+    width: 1034px;
+  }
+  .inputWrapper form {
+    display: flex;
+  }
+  .button {
+    display: block;
+  }
+}

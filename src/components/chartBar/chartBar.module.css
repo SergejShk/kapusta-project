@@ -1,0 +1,22 @@
+.chartDiv {
+  width: 300px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .chartDiv {
+    width: 604px;
+    padding: 50px;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .chartDiv {
+    width: 934px;
+    padding: 50px;
+  }
+}

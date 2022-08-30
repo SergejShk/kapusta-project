@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+/* @import-normalize; bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -36,3 +36,9 @@ ul {
 .loader {
   justify-content: center;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
