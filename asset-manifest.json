@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kapusta-project/static/css/main.d8eb24ec.css",
-    "main.js": "/kapusta-project/static/js/main.9ccffc92.js",
+    "main.js": "/kapusta-project/static/js/main.65082511.js",
     "static/css/914.172b8831.chunk.css": "/kapusta-project/static/css/914.172b8831.chunk.css",
     "static/js/914.c37f2b91.chunk.js": "/kapusta-project/static/js/914.c37f2b91.chunk.js",
     "static/css/183.68a524a0.chunk.css": "/kapusta-project/static/css/183.68a524a0.chunk.css",
@@ -22,7 +22,7 @@
     "index.html": "/kapusta-project/index.html",
     "static/media/close.svg": "/kapusta-project/static/media/close.725652eddfe0bd34d7c2.svg",
     "main.d8eb24ec.css.map": "/kapusta-project/static/css/main.d8eb24ec.css.map",
-    "main.9ccffc92.js.map": "/kapusta-project/static/js/main.9ccffc92.js.map",
+    "main.65082511.js.map": "/kapusta-project/static/js/main.65082511.js.map",
     "914.172b8831.chunk.css.map": "/kapusta-project/static/css/914.172b8831.chunk.css.map",
     "914.c37f2b91.chunk.js.map": "/kapusta-project/static/js/914.c37f2b91.chunk.js.map",
     "183.68a524a0.chunk.css.map": "/kapusta-project/static/css/183.68a524a0.chunk.css.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.d8eb24ec.css",
-    "static/js/main.9ccffc92.js"
+    "static/js/main.65082511.js"
   ]
 }
