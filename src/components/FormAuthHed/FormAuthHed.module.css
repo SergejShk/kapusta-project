@@ -68,6 +68,11 @@
   outline-color: green;
   background: #f6f7fb;
 }
+
+.input::placeholder{
+  color: rgb(145, 143, 143);
+}
+
 .navForm__btnGoogle {
   position: relative;
   padding: 10px 19px;
