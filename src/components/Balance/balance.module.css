@@ -90,7 +90,7 @@ input::-webkit-inner-spin-button {
   border-radius: 30px;
   display: block;
 
-  z-index: 999;
+  z-index: 20;
 }
 
 .tooltipArrow {
@@ -109,7 +109,7 @@ input::-webkit-inner-spin-button {
   border: 18px solid #1d348a;
   border-color: transparent transparent #1d346a transparent;
 
-  z-index: 999;
+  z-index: 20;
   display: block;
 }
 
