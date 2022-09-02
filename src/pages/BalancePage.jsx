@@ -10,7 +10,6 @@ import styles from '../components/Balance/balance.module.css';
 import s from '../components/CategoryForm/CategoryForm.module.css';
 
 const WorkSpacePage = () => {
-
   return (
     <Section>
       <div className={styles.BalanceBox}>
