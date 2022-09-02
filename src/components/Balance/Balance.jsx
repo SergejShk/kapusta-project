@@ -12,6 +12,7 @@ const Balance = () => {
   const stateBalance = useSelector(getUserBalance);
   const [isTooltip, setIsTooltip] = useState(stateBalance <= 0);
   const [balance, setBalance] = useState(0);
+  const [errorSubmit, setErrorSubmit] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -34,6 +35,12 @@ const Balance = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    if (Number(balance) === 0) {
+      setErrorSubmit(true);
+      return;
+    }
+    setErrorSubmit(false);
     submitBalance(balance);
   };
 
@@ -79,6 +86,19 @@ const Balance = () => {
             </div>
           ) : (
             ''
+          )}
+          {errorSubmit && (
+            <>
+              <div className={styles.tooltipArrow}></div>
+              <div className={styles.tooltipContainment}>
+                <p className={styles.tooltipMainText}>
+                  Sorry! New balance must be greater than or equal to 1
+                </p>
+                <p className={styles.tooltipText}>
+                  You can't spend money until you have it :)
+                </p>
+              </div>
+            </>
           )}
         </div>
       </div>
