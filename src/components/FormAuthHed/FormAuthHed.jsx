@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logInThunk, registerThunk } from 'redux/auth/authOperations';
 import { getLoggedIn, getRegistered } from 'redux/auth/authSelectors';
+import { authValidation } from '../../utils/options/authValidation';
 import s from './FormAuthHed.module.css';
 
 const AuthForm = () => {
@@ -23,13 +24,15 @@ const AuthForm = () => {
   const handleSubmitRegistration = e => {
     e.preventDefault();
 
-    dispatch(registerThunk({ email, password }));
+    authValidation(email, password) &&
+      dispatch(registerThunk({ email, password }));
   };
 
   const handleSubmitLogIn = e => {
     e.preventDefault();
 
-    dispatch(logInThunk({ email: email, password: password }));
+    authValidation(email, password) &&
+      dispatch(logInThunk({ email: email, password: password }));
 
     resetForm();
   };
