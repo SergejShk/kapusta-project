@@ -33,7 +33,7 @@
 }
 .inform-list {
   box-sizing: border-box;
-  max-height: 143px;
+  max-height: calc(100vh - 58px - 279px - 54px - 20px);
   max-width: 280px;
   overflow-y: scroll;
 }
