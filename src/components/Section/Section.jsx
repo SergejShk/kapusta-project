@@ -16,7 +16,6 @@ const Section = ({ children }) => {
         )}
         {children}
       </div>
-      <img src="" alt="" />
     </section>
   );
 };
