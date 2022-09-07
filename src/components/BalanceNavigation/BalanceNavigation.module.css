@@ -13,7 +13,7 @@
   text-transform: uppercase;
 
   color: #000000;
-  padding: 20px 50px; 
+  padding: 20px 50px;
   background: #f5f6fb;
   border: none;
 }
@@ -61,11 +61,11 @@
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #000000;
+    color: var(--black-text-color);
     padding: 10px 20px;
     width: 138px;
     height: 40px;
-    background: #fafbfd;
+    background: var(--not-active-link-bg);
     border: none;
     border-radius: 20px 20px 0px 0px;
   }
@@ -78,14 +78,14 @@
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    background: transparent;
+    /* background: transparent; */
     color: #ff751d;
     padding: 10px 20px;
     width: 138px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: var(--back-transparent-form);
+    box-shadow: var(--box-shadow-form);
     border: none;
     border-radius: 20px 20px 0px 0px;
   }
 }
-

@@ -5,7 +5,15 @@
   padding: 12px 20px;
   margin: 0 auto;
 }
-
+.icon {
+  /* background: #e0e5eb; */
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+.logoLog {
+  fill: var(--black-text-color);
+}
 .wrapperRigth {
   display: flex;
   align-items: center;
@@ -31,12 +39,13 @@
 }
 
 .user {
-  font-size: 12px;
+  font-size: 24px;
   font-weight: 700;
-  border-radius: 50%;
+  border-radius: 40%;
   background-color: #f5f6fa;
   color: #52555f;
-  padding: 9px 12px;
+  padding: 4px 12px;
+  box-shadow: var(--box-shadow);
 }
 
 @media screen and (max-width: 767px) {
@@ -62,7 +71,8 @@
     letter-spacing: 0.04em;
     text-decoration-line: underline;
 
-    color: #52555f;
+    color: var(--primary-text-color);
+    text-shadow: var(--text-shadow);
   }
   .userName {
     font-weight: 400;
@@ -72,7 +82,8 @@
     text-align: right;
     letter-spacing: 0.04em;
 
-    color: #52555f;
+    color: var(--primary-text-color);
+    text-shadow: var(--text-shadow);
   }
 }
 
@@ -81,9 +92,9 @@
     padding-right: 12px;
   }
   .wrapper {
-    padding: 12px 16px;
+    padding: 4px 16px;
     width: 1280px;
     margin: 0 auto;
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
   }
 }
