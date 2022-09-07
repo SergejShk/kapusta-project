@@ -7,6 +7,7 @@ import { getLoggedIn } from 'redux/auth/authSelectors';
 import { getUserEmail } from 'redux/userData/userDataSelectors';
 import sprite from '../../assets/icons/sprite.svg';
 import styles from './header.module.css';
+import DarkMode from '../DarkMode/DarkMode';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -28,12 +29,15 @@ const Header = () => {
       <div className={styles.wrapper}>
         <div className={styles.logoWrapper}>
           <Link to={'/'} className={styles.logo}>
-            <svg className="icon" width="90" height="30">
-              <use href={sprite + '#icon-logo'}></use>
+            <svg className={styles.icon} width="90" height="30">
+              <use
+                className={styles.logoLog}
+                href={sprite + '#icon-logo'}
+              ></use>
             </svg>
           </Link>
         </div>
-
+        <DarkMode />
         {isLogin && (
           <div className={styles.wrapperRigth}>
             <div className={styles.iconName}>

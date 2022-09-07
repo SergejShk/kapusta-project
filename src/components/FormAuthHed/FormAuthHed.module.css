@@ -8,17 +8,17 @@
   margin-bottom: 30px;
   margin: 0 auto;
   margin-top: 50px;
-  background: #ffffff;
-  box-shadow: 0px 10px 60px rgba(170, 178, 197, 0.2);
+  /* background: #ffffff; */
+  box-shadow: var(--box-shadow-form);
   border-radius: 30px;
-  
+  background: var(--back-transparent-form);
+  /* box-shadow: var(--box-shadow); */
 }
-    @media screen and (max-width: 1279px) {
-      .navForm{
-        position: static;
-      }
-      
-    }
+@media screen and (max-width: 1279px) {
+  .navForm {
+    position: static;
+  }
+}
 
 .navForm h2 {
   font-family: 'Roboto';
@@ -28,7 +28,7 @@
   line-height: 14px;
   letter-spacing: 0.04em;
   margin-bottom: 20px;
-  color: #52555f;
+  color: var(--primary-text-color);
   @media screen and (max-width: 768px) {
     margin-top: 56px;
   }
@@ -42,7 +42,7 @@
   letter-spacing: 0.04em;
   margin: 0;
   margin-bottom: 20px;
-  color: #52555f;
+  color: var(--primary-text-color);
 }
 .label {
   display: flex;
@@ -54,7 +54,7 @@
   line-height: 14px;
   margin-bottom: 32px;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: var(--black-text-color);
 }
 
 .input {
@@ -66,10 +66,12 @@
   border-radius: 30px;
   border: none;
   outline-color: green;
-  background: #f6f7fb;
+  /* background: #f6f7fb; */
+  background: var(--bg-color);
+  color: var(--black-text-color);
 }
 
-.input::placeholder{
+.input::placeholder {
   color: rgb(145, 143, 143);
 }
 
@@ -83,7 +85,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  background: #f6f7fb;
+  background: var(--bg-color);
 
   border-radius: 26px;
   letter-spacing: 0.02em;
@@ -105,9 +107,9 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  background: #f6f7fb;
+  background: var(--bg-color);
+  color: var(--black-text-color);
   letter-spacing: 0.02em;
-  color: #000000;
   margin-left: 28px;
 }
 
@@ -121,12 +123,14 @@
   cursor: pointer;
   border: none;
   border-radius: 26px;
+  background: var(--bg-color);
+  color: var(--black-text-color);
 }
 .navForm__btn:last-child {
   margin-left: 10px;
 }
 .navForm__btn:hover,
-.navForm__btnGoogle:hover { 
+.navForm__btnGoogle:hover {
   box-shadow: 0 4px 21px 0 green;
   text-align: center;
 }

@@ -73,7 +73,7 @@ function ExpensesTable() {
                       </svg>
                     </button>
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>

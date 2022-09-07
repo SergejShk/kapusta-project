@@ -18,7 +18,7 @@ export default function CreateDatePicker({ children }) {
 
   return (
     <div className={s.calendarblock}>
-      <label data-for="date" htmlFor="date">
+      <label className={s.label} data-for="date" htmlFor="date">
         <Icons
           name="calendar"
           width={20}

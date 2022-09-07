@@ -20,12 +20,12 @@ const ChartBar = dataForChart => {
     setArrayDescr(
       dataForChart.dataForChart.map(descr => {
         return descr.description;
-      })
+      }),
     );
     setArrayTotal(
       dataForChart.dataForChart.map(descr => {
         return descr.total;
-      })
+      }),
     );
   }, [dataForChart]);
 
@@ -35,7 +35,7 @@ const ChartBar = dataForChart => {
     BarElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
   );
 
   const options = {
@@ -52,6 +52,7 @@ const ChartBar = dataForChart => {
 
       tooltip: {
         enabled: true,
+        color: 'white',
       },
     },
 

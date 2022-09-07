@@ -3,7 +3,7 @@
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffffff;
+  background: var(--container-tab);
 }
 
 @media screen and (min-width: 768px) {

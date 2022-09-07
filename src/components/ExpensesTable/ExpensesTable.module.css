@@ -33,9 +33,10 @@
 }
 .inform-list {
   box-sizing: border-box;
-  max-height: calc(100vh - 58px - 279px - 54px - 20px);
-  max-width: 280px;
-  overflow-y: scroll;
+  /* background-color: var(--back-transparent); */
+  /* max-height: calc(100vh - 58px - 279px - 54px - 20px); */
+  /* max-width: 280px; */
+  /* overflow-y: scroll; */
 }
 .inform {
   height: 40px;
@@ -47,7 +48,7 @@
   font-size: 8px;
   line-height: 1.12;
   letter-spacing: 0.04em;
-  color: #52555f;
+  color: var(--primary-text-color);
 }
 .inform:not(:last-child) {
   border-bottom: 2px solid #f5f6fb;
@@ -138,6 +139,10 @@
 .empty-line {
   display: none;
 }
+.container {
+  border: 2px solid #f5f6fb;
+  background: var(--container-tab);
+}
 
 @media screen and (min-width: 768px) {
   .table {
@@ -156,11 +161,11 @@
     display: flex;
   }
   .inform-list {
-    max-height: 340px;
-    min-width: 624px;
-    border-top: 2px solid #f5f6fb;
-    border-bottom: 2px solid #f5f6fb;
-    border-left: 2px solid #f5f6fb;
+    /* max-height: 334px; */
+    /* min-width: 624px; */
+    /* border-top: 2px solid #f5f6fb; */
+    /* border-bottom: 2px solid #f5f6fb; */
+    /* border-left: 2px solid #f5f6fb; */
   }
   .inform {
     height: 40px;
@@ -173,7 +178,6 @@
     line-height: 1.16;
     align-items: center;
     letter-spacing: 0.04em;
-    color: #52555f;
   }
 
   .desc-mobil {
@@ -237,7 +241,9 @@
     display: block;
   }
   .container {
-    width: 624px;
+    width: 620px;
+    border: 2px solid #f5f6fb;
+    background: var(--container-tab);
   }
 }
 
@@ -255,12 +261,12 @@
   .inform-list {
     box-sizing: border-box;
 
-    max-height: 340px;
-    min-width: 746px;
+    max-height: 334px;
+    min-width: 742px;
 
-    border-top: 2px solid #f5f6fb;
-    border-bottom: 2px solid #f5f6fb;
-    border-left: 2px solid #f5f6fb;
+    /* border-top: 2px solid #f5f6fb; */
+    /* border-bottom: 2px solid #f5f6fb; */
+    /* border-left: 2px solid #f5f6fb; */
     overflow-y: auto;
   }
   .inform {
@@ -269,8 +275,6 @@
     padding: 0 27px 0 20px;
 
     align-items: center;
-
-    color: #52555f;
   }
   .inform:not(:last-child) {
     border-bottom: 2px solid #f5f6fb;
@@ -317,7 +321,7 @@
     text-align: center;
   }
   .container {
-    width: 746px;
+    width: 742px;
   }
 }
 
